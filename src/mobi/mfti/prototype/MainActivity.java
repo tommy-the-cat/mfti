@@ -66,14 +66,14 @@ public class MainActivity extends Activity{
 	}
 	
 	public void getTip()
-	//  ---------------------------------
+	//  ----------------------------------
 	//  Purpose: Retrieves a random tip
 	//		     from tips.txt located
 	//           in the assets folder.
 	//  Note:    tips.txt will most likely 
 	//           be replaced by an SQLite
 	//			 database at some point.
-	//  ---------------------------------
+	//  ----------------------------------
 	{
 		AssetManager assetManager = getAssets();
 		
