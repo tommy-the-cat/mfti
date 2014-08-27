@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobi.mfti.prototype.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/getTipButton"
+        android:layout_alignRight="@+id/getTipButton"
+        android:layout_below="@+id/getTipButton"
+        android:layout_marginTop="18dp"
+        
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/pplEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kwhEditText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/ppl_hint"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/sqrftEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pplEditText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/sqrfoot_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/clearEUIButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calcEUIButton"
+        android:layout_alignBottom="@+id/calcEUIButton"
+        android:layout_alignRight="@+id/tipTextView"
+        android:onClick="clearEUIButtonClicked"
+        android:text="@string/clearEUIButton_text"
+        android:width="150dp" />
+
+    <Button
+        android:id="@+id/calcEUIButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipTextView"
+        android:layout_below="@+id/sqrftEditText"
+        android:onClick="calcEUIButtonClicked"
+        android:text="@string/calcEUIButton_text"
+        android:width="150dp" />
+
+    <TextView
+        android:id="@+id/findEUITextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/findEUI_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/euiInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/findEUITextView"
+        android:textColor="#0033CC"
+        android:onClick="euiInfoClicked"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/euiInfoTextView_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/kwhEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pplEditText"
+        android:layout_below="@+id/euiInfoTextView"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/kwh_hint"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/getTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="getTipClicked"
+        android:text="@string/getTip_button_text"
+        android:width="300dp" />
+
+</RelativeLayout>
+
