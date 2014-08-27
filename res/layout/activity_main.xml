@@ -101,5 +101,15 @@
         android:text="@string/getTip_button_text"
         android:width="300dp" />
 
+    <Button
+        android:id="@+id/meterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipTextView"
+        android:layout_below="@+id/tipTextView"
+        android:layout_marginTop="20dp"
+        android:onClick="tutorialButtonClicked"
+        android:text="@string/tutorialButton_text" />
+
 </RelativeLayout>
 

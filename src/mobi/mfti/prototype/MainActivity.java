@@ -9,6 +9,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.Menu;
@@ -212,5 +213,9 @@ public class MainActivity extends Activity{
 		return value;
 	}
 
+	private void tutorialButtonClicked(View v){
+		//Toast.makeText(getApplicationContext(), "tutorialButtonClicked called", Toast.LENGTH_SHORT).show();
+		startActivity(new Intent(getApplicationContext(), MeterTutorialActivity.class));
+	}
 
 }
