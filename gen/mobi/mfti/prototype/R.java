@@ -25,7 +25,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000c;
+        public static final int action_settings=0x7f08000d;
         public static final int calcEUIButton=0x7f080007;
         public static final int clearEUIButton=0x7f080006;
         public static final int container=0x7f080000;
@@ -34,10 +34,11 @@ public final class R {
         public static final int getTipButton=0x7f080002;
         public static final int kwhEditText=0x7f080004;
         public static final int meterButton=0x7f08000a;
+        public static final int meterTutorialButton=0x7f08000c;
         public static final int pplEditText=0x7f080003;
         public static final int sqrftEditText=0x7f080005;
         public static final int tipTextView=0x7f080001;
-        public static final int tutorialTextView=0x7f08000b;
+        public static final int whyMeterButton=0x7f08000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -57,10 +58,13 @@ public final class R {
         public static final int getTip_button_text=0x7f050003;
         public static final int hello_world=0x7f050001;
         public static final int kwh_hint=0x7f050005;
+        public static final int meterTutorialButton_text=0x7f050010;
         public static final int ppl_hint=0x7f050006;
         public static final int sqrfoot_hint=0x7f050007;
         public static final int tutorialButton_text=0x7f05000c;
         public static final int tutorialTextView_text=0x7f05000d;
+        public static final int whyMeterDescription_text=0x7f05000f;
+        public static final int whyMeterTextView_text=0x7f05000e;
     }
     public static final class style {
         /** 

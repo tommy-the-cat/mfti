@@ -213,9 +213,12 @@ public class MainActivity extends Activity{
 		return value;
 	}
 
-	private void tutorialButtonClicked(View v){
+	public void tutorialButtonClicked(View v){
+		
 		//Toast.makeText(getApplicationContext(), "tutorialButtonClicked called", Toast.LENGTH_SHORT).show();
 		startActivity(new Intent(getApplicationContext(), MeterTutorialActivity.class));
+		
 	}
+	
 
 }

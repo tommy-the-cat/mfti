@@ -79,18 +79,6 @@
         android:text="@string/euiInfoTextView_text"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <EditText
-        android:id="@+id/kwhEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pplEditText"
-        android:layout_below="@+id/euiInfoTextView"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/kwh_hint"
-        android:inputType="number" >
-    </EditText>
-
     <Button
         android:id="@+id/getTipButton"
         android:layout_width="wrap_content"
@@ -101,15 +89,31 @@
         android:text="@string/getTip_button_text"
         android:width="300dp" />
 
+    <EditText
+        android:id="@+id/kwhEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pplEditText"
+        android:layout_below="@+id/euiInfoTextView"
+        android:ems="10"
+        android:hint="@string/kwh_hint"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
     <Button
         android:id="@+id/meterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tipTextView"
-        android:layout_below="@+id/tipTextView"
-        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/calcEUIButton"
+        android:layout_alignRight="@+id/clearEUIButton"
+        android:layout_below="@+id/clearEUIButton"
+        android:height="35dp"
+        android:minHeight="35dp"
         android:onClick="tutorialButtonClicked"
-        android:text="@string/tutorialButton_text" />
+        android:text="@string/tutorialButton_text"
+        android:textSize="15sp" />
 
 </RelativeLayout>
 

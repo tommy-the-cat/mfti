@@ -3,14 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/tutorialTextView"
+    <Button
+        android:id="@+id/whyMeterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/tutorialTextView_text" />
+        android:onClick="whyMeterClicked"
+        android:text="@string/whyMeterTextView_text"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/meterTutorialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/whyMeterButton"
+        android:text="@string/meterTutorialButton_text"
+        android:textSize="35sp" />
 
 </RelativeLayout>
