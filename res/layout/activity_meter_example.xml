@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:text="@string/exampleMeterTextView_text"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textSize="13sp"
