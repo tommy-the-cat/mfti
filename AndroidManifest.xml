@@ -31,6 +31,15 @@
             </intent-filter>            
         </activity>
         
+        <activity
+            android:label="Example Reading"
+            android:name=".MeterExampleActivity">            
+            <intent-filter>
+                <action android:name="mobi.mfti.prototype.MeterExampleActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>            
+        </activity>
+        
     </application>
 
 </manifest>

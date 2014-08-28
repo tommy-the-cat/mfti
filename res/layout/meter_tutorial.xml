@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:onClick="whyMeterClicked"
         android:text="@string/whyMeterTextView_text"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/meterTutorialButton"
@@ -21,7 +21,30 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/whyMeterButton"
+        android:onClick="tutorialButtonClicked"
         android:text="@string/meterTutorialButton_text"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/meterHintsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:onClick="hintsButtonClicked"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/meterTutorialButton"
+        android:text="@string/meterHintsButton_text"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/exampleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/meterHintsButton"
+        android:onClick="exampleButtonClicked"
+        android:text="@string/exampleButton_text"
+        android:textSize="30sp" />
 
 </RelativeLayout>
