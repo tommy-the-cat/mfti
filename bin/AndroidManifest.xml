@@ -40,6 +40,15 @@
             </intent-filter>            
         </activity>
         
+        <activity
+            android:label="Read Usage"
+            android:name=".ReadUsageActivity">            
+            <intent-filter>
+                <action android:name="mobi.mfti.prototype.ReadUsageActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>            
+        </activity>
+        
     </application>
 
 </manifest>

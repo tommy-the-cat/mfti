@@ -31,6 +31,10 @@ public class MeterTutorialActivity extends Activity{
 		showAlert(getString(R.string.hints_text));
 	}
 	
+	public void readUsageButtonClicked(View v){
+		startActivity(new Intent(getApplicationContext(), ReadUsageActivity.class));
+	}
+	
 	public void showAlert(String msg){
 		// build alert to display EUI description
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);

@@ -25,5 +25,14 @@
     <string name="exampleTitleTextView_text">We\'ll use the meter below as an example.</string>
     <string name="example_meter_img_desc">Example of a meter that could be typically found on the average household</string>
     <string name="exampleMeterTextView_text">The pointer on the far left dial has passed 8, and is between 8 and 9. Read the smaller number which the pointer just passed, which is 8.\n\nThe pointer on the next dial looks like it is right on the 4. But, the dial to its right has not passed zero. So, you would read this dial as 3.\n\nThe next dial has passed 8, and is between 8 and 9. Again, read the smaller number which the pointer has just passed, which is 8.\n\nThe second pointer from the right has just passed 9, and is between 9 and 0. Read this as 9.\n\nThe pointer on the far right is directly on number 5. Read this as 5.\n\nThis meter reads 83895</string>
+    <string name="readUsageButton_text">How to read the amount of electricity used in one week</string>
+    <string name="readUsageTextView_text">How to read the amount of electricity used in one week:</string>
+    <string name="weekOneImage_contentdesc">Week one meter</string>
+    <string name="weekOneTextView_text">The reading on week-one is 2-6-3-5.</string>
+    <string name="weekTwoImage_contentdesc">Week two meter</string>
+    <string name="weekTwoTextView_text">A week later at about the same time the reading is 2-8-3-9.</string>
+    <string name="resultsTextView_text">If you subtract the earlier reading from the new reading:</string>
+    <string name="resultsMathTextView_text">2839 - 2635 = 204</string>
+    <string name="answerTextView_text">In this case,  204 kWh were used.</string>
 
 </resources>
