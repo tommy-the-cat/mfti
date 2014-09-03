@@ -13,8 +13,7 @@
         android:layout_alignLeft="@+id/getTipButton"
         android:layout_alignRight="@+id/getTipButton"
         android:layout_below="@+id/getTipButton"
-        android:layout_marginTop="18dp"
-        
+        android:layout_marginTop="18dp"        
         android:gravity="center_horizontal" />
 
     <EditText
@@ -87,7 +86,8 @@
         android:layout_centerHorizontal="true"
         android:onClick="getTipClicked"
         android:text="@string/getTip_button_text"
-        android:width="300dp" />
+        android:width="300dp">        
+     </Button>
 
     <EditText
         android:id="@+id/kwhEditText"
@@ -97,9 +97,8 @@
         android:layout_below="@+id/euiInfoTextView"
         android:ems="10"
         android:hint="@string/kwh_hint"
-        android:inputType="number" >
-
-        <requestFocus />
+        android:inputType="number" >    
+        <requestFocus />    
     </EditText>
 
     <Button

@@ -28,11 +28,11 @@
     <string name="readUsageButton_text">How to read the amount of electricity used in one week</string>
     <string name="readUsageTextView_text">How to read the amount of electricity used in one week:</string>
     <string name="weekOneImage_contentdesc">Week one meter</string>
-    <string name="weekOneTextView_text">The reading on week-one is 2-6-3-5.</string>
+    <string name="weekOneTextView_text">The reading on week&#8211;one is 2&#8211;6&#8211;3&#8211;5.</string>
     <string name="weekTwoImage_contentdesc">Week two meter</string>
-    <string name="weekTwoTextView_text">A week later at about the same time the reading is 2-8-3-9.</string>
+    <string name="weekTwoTextView_text">A week later at about the same time the reading is 2&#8211;8&#8211;3&#8211;9.</string>
     <string name="resultsTextView_text">If you subtract the earlier reading from the new reading:</string>
-    <string name="resultsMathTextView_text">2839 - 2635 = 204</string>
+    <string name="resultsMathTextView_text">2839 &#8211; 2635 = 204</string>
     <string name="answerTextView_text">In this case,  204 kWh were used.</string>
 
 </resources>
