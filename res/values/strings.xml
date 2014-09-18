@@ -34,5 +34,8 @@
     <string name="resultsTextView_text">If you subtract the earlier reading from the new reading:</string>
     <string name="resultsMathTextView_text">2839 &#8211; 2635 = 204</string>
     <string name="answerTextView_text">In this case,  204 kWh were used.</string>
+    <string name="listenerButton_text">Start reading your meter!</string>
+    <string name="speakButton_text">Tap to start listening!</string>
+    <string name="resetButton_text">Reset</string>
 
 </resources>

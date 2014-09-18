@@ -49,6 +49,15 @@
             </intent-filter>            
         </activity>
         
+        <activity
+            android:label="Listener"
+            android:name=".ListenerActivity">            
+            <intent-filter>
+                <action android:name="mobi.mfti.prototype.ListenerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>            
+        </activity>
+        
     </application>
 
 </manifest>

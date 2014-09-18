@@ -108,7 +108,7 @@
         android:layout_alignLeft="@+id/calcEUIButton"
         android:layout_alignRight="@+id/clearEUIButton"
         android:layout_below="@+id/clearEUIButton"
-        android:height="35dp"
+        android:height="48dp"
         android:minHeight="35dp"
         android:onClick="tutorialButtonClicked"
         android:text="@string/tutorialButton_text"

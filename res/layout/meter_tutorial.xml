@@ -58,4 +58,15 @@
         android:text="@string/readUsageButton_text"
         android:textSize="24sp" />
 
+    <Button
+        android:id="@+id/listenerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/readUsageButton"
+        android:onClick="listenerButtonClicked"
+        android:text="@string/listenerButton_text"
+        android:textSize="24sp" />
+
 </RelativeLayout>
