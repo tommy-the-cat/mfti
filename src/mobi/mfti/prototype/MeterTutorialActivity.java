@@ -12,7 +12,7 @@ public class MeterTutorialActivity extends Activity{
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.meter_tutorial);	
+		setContentView(R.layout.activity_meter_tutorial);	
 	}
 	
 	public void whyMeterClicked(View v){
