@@ -13,17 +13,6 @@
         android:onClick="speakButtonClicked"
         android:text="@string/speakButton_text" />
 
-    <TextView
-        android:id="@+id/speechTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:gravity="center_horizontal"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="60sp"
-        android:width="300dp" />
-
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
@@ -42,5 +31,16 @@
         android:layout_alignParentRight="true"
         android:onClick="resetButtonClicked"
         android:text="@string/resetButton_text" />
+
+    <TextView
+        android:id="@+id/speechTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60sp"
+        android:width="300dp" />
 
 </RelativeLayout>
