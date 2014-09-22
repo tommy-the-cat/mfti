@@ -25,10 +25,19 @@
         android:width="300dp" />
 
     <Button
-        android:id="@+id/resetButton"
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/submitButton_text" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:onClick="resetButtonClicked"

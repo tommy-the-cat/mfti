@@ -37,5 +37,6 @@
     <string name="listenerButton_text">Start reading your meter!</string>
     <string name="speakButton_text">Tap to start listening!</string>
     <string name="resetButton_text">Reset</string>
+    <string name="submitButton_text">Submit Reading</string>
 
 </resources>
