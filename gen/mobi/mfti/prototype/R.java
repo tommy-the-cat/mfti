@@ -49,13 +49,13 @@ public final class R {
         public static final int pplEditText=0x7f080007;
         public static final int readUsageButton=0x7f080016;
         public static final int readUsageTitleTextView=0x7f080018;
-        public static final int resetButton=0x7f080003;
+        public static final int resetButton=0x7f080002;
         public static final int resultsMathTextView=0x7f08001d;
         public static final int resultsTextView=0x7f08001c;
         public static final int speakButton=0x7f080000;
-        public static final int speechTextView=0x7f080001;
+        public static final int speechTextView=0x7f080003;
         public static final int sqrftEditText=0x7f080009;
-        public static final int submitButton=0x7f080002;
+        public static final int submitButton=0x7f080001;
         public static final int tipTextView=0x7f080005;
         public static final int weekOneTextView=0x7f080019;
         public static final int weekTwoTextView=0x7f08001b;

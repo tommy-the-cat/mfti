@@ -1,6 +1,10 @@
 package mobi.mfti.prototype;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Random;
@@ -8,10 +12,12 @@ import java.util.Random;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,10 +26,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+//  added to remove annoying warnings
 @SuppressWarnings("unused")
 public class MainActivity extends Activity{
-	
 	
 	private TextView tipTextView,
 					 findEUITextView;
@@ -44,7 +49,12 @@ public class MainActivity extends Activity{
 		kwhEditText     = (EditText)findViewById(R.id.kwhEditText);
 		pplEditText     = (EditText)findViewById(R.id.pplEditText);
 		sqrftEditText   = (EditText)findViewById(R.id.sqrftEditText);
-		findEUITextView = (TextView)findViewById(R.id.findEUITextView);	
+		findEUITextView = (TextView)findViewById(R.id.findEUITextView);
+		
+
+
+		
+		
 		
 	}
 
