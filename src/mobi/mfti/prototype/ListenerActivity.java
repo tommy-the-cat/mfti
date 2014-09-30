@@ -1,5 +1,12 @@
 package mobi.mfti.prototype;
 
+import org.achartengine.ChartFactory;
+import org.achartengine.chart.PointStyle;
+import org.achartengine.model.XYMultipleSeriesDataset;
+import org.achartengine.model.XYSeries;
+import org.achartengine.renderer.XYMultipleSeriesRenderer;
+import org.achartengine.renderer.XYSeriesRenderer;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +14,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.view.View;
@@ -14,6 +22,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class ListenerActivity extends Activity {
+    
+	//  string array that holds the months of the year
+	//  to be used on the X axis of the chart
+	private String[] mMonth = new String[] {
+            "Jan", "Feb" , "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug" , "Sep", "Oct", "Nov", "Dec"
+    };
 	
 	private static final int REQUEST_CODE = 1234;
     
@@ -64,4 +79,54 @@ public class ListenerActivity extends Activity {
     }
     
     public void resetButtonClicked(View v) { speechTextView.setText(""); }
+    
+    public void submitButtonClicked(View v) { openChart(); };
+    
+    private void openChart(){
+        int[] x = { 1,2,3,4,5,6,7,8 };
+        int[] energyUse = { 2000,2500,2700,3000,2800,3500,3700,3800};
+ 
+        // Creating an  XYSeries for Energy
+        XYSeries energySeries = new XYSeries("Energy Use");
+        // Adding data to Energy Series
+        for(int i=0;i<x.length;i++){
+        	energySeries.add(x[i], energyUse[i]);
+        }
+ 
+        // Creating a dataset to hold series
+        XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
+        // Adding Energy Series to the dataset
+        dataset.addSeries(energySeries);
+        
+        // Creating XYSeriesRenderer to customize energySeries
+        XYSeriesRenderer energyRenderer = new XYSeriesRenderer();
+        energyRenderer.setColor(Color.WHITE);
+        energyRenderer.setPointStyle(PointStyle.CIRCLE);
+        energyRenderer.setFillPoints(true);
+        energyRenderer.setLineWidth(2);
+        energyRenderer.setDisplayChartValues(true);
+        
+        // Creating a XYMultipleSeriesRenderer to customize the whole chart
+        XYMultipleSeriesRenderer multiRenderer = new XYMultipleSeriesRenderer();
+        multiRenderer.setXLabels(0);
+        multiRenderer.setChartTitle("Energy Usage");
+        multiRenderer.setXTitle("Year 2013");
+        multiRenderer.setYTitle("Energy Used (kwh)");
+        multiRenderer.setZoomButtonsVisible(true);
+        for(int i=0;i<x.length;i++){
+            multiRenderer.addXTextLabel(i+1, mMonth[i]);
+        }
+ 
+        // Adding energyRenderer to multipleRenderer
+        // Note: The order of adding dataseries to dataset and renderers to multipleRenderer
+        // should be same
+        multiRenderer.addSeriesRenderer(energyRenderer);
+ 
+        // Creating an intent to plot line chart using dataset and multipleRenderer
+        Intent intent = ChartFactory.getLineChartIntent(getBaseContext(), dataset, multiRenderer);
+ 
+        // Start Activity
+        startActivity(intent);
+    }
+    
 }

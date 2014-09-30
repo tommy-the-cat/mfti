@@ -61,6 +61,8 @@
             </intent-filter>            
         </activity>
         
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        
     </application>
 
 </manifest>

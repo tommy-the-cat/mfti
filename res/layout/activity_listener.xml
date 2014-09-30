@@ -20,6 +20,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:onClick="submitButtonClicked"
         android:text="@string/submitButton_text" />
 
     <Button

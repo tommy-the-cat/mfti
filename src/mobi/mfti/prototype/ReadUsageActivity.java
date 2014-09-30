@@ -9,5 +9,5 @@ public class ReadUsageActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_read_usage);	
 	}
-// this is a comment
+
 }

@@ -16,6 +16,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
@@ -29,6 +30,7 @@ import android.widget.Toast;
 //  added to remove annoying warnings
 @SuppressWarnings("unused")
 public class MainActivity extends Activity{
+
 	
 	private TextView tipTextView,
 					 findEUITextView;
@@ -232,5 +234,6 @@ public class MainActivity extends Activity{
 		
 	}
 	
+    
 
 }
